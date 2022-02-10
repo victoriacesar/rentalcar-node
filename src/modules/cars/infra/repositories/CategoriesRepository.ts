@@ -1,11 +1,11 @@
 import { getRepository, Repository } from "typeorm";
 
-import { Category } from "@modules/cars/entities/Category";
+import { Category } from "@modules/cars/infra/typeorm/entities/Category";
 
 import {
   ICategoriesRepository,
   ICreateCategoryDTO,
-} from "../ICategoriesRepository";
+} from "../../repositories/ICategoriesRepository";
 
 // DTO => DATA TRANSFER OBJECT:
 // CRIAR UM OBJETO QUE VAI SER RESPONSÁVEL POR FAZER A TRANSFERENCIA DE DADOS ENTRE UMA CAMADA/CLASSE E OUTRA.
