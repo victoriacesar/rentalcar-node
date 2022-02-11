@@ -5,7 +5,7 @@ import { Specification } from "@modules/cars/infra/typeorm/entities/Specificatio
 import {
   ICreateSpecificationDTO,
   ISpecificationsRepository,
-} from "../../repositories/ISpecificationsRepository";
+} from "../../../repositories/ISpecificationsRepository";
 
 class SpecificationsRepository implements ISpecificationsRepository {
   private repository: Repository<Specification>;
