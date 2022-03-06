@@ -24,11 +24,11 @@ class CreateRentalUseCase {
   }: IRequest): Promise<Rental> {
     const minimumHour = 24;
 
-    const carUnvailable = await this.rentalsRepository.findOpenRentalByCar(
+    const carUnavailable = await this.rentalsRepository.findOpenRentalByCar(
       car_id,
     );
 
-    if (carUnvailable) {
+    if (carUnavailable) {
       throw new AppError("Car is unavailable!");
     }
 
