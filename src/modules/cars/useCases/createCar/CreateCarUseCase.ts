@@ -48,8 +48,6 @@ class CreateCarUseCase {
       category_id,
     });
 
-    console.log(car);
-
     return car;
   }
 }
