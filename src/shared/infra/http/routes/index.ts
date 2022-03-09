@@ -8,6 +8,8 @@ import { usersRoutes } from "./users.routes";
 
 const router = Router();
 
+console.log('oie')
+
 router.use("/categories", categoriesRoutes);
 router.use("/specifications", specificationsRoutes);
 router.use("/users", usersRoutes);
