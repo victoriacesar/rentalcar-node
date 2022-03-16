@@ -5,7 +5,7 @@ import { v4 as uuidV4 } from "uuid";
 
 import createConnection from "@shared/infra/typeorm";
 
-import { app } from "../../../../app";
+import { app } from "../../../../shared/infra/http/app";
 
 let connection: Connection;
 
