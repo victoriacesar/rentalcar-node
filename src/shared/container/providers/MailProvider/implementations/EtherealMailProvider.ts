@@ -1,7 +1,7 @@
+import fs from "fs";
+import handlebars from "handlebars";
 import nodemailer, { Transporter } from "nodemailer";
 import { injectable } from "tsyringe";
-import handlebars from "handlebars";
-import fs from "fs";
 
 import { IMailProvider } from "../IMailProvider";
 
@@ -47,7 +47,7 @@ class EtherealMailProvider implements IMailProvider {
       html: templateHTML,
     });
 
-    console.log("Messa sent: %s", message.messageId);
+    console.log("Message sent: %s", message.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(message));
   }
 }
